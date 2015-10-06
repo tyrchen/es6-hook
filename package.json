@@ -1,0 +1,36 @@
+{
+  "author": "Tyr Chen <tyr.chen@gmail.com> (https://github.com/tyrchen)",
+  "name": "es6-hook",
+  "description": "automatically add webpack and es6/react dependencie",
+  "version": "1.0.0",
+  "license": "MIT",
+  "homepage": "https://github.com/tyrchen/es6-hook",
+  "repository": {
+    "url": "https://github.com/tyrchen/es6-hook.git"
+  },
+  "dependencies": {
+    "git-validate-tyrchen": "*",
+    "react": "*",
+    "rx": "*",
+    "ramda": "*"
+  },
+  "scripts": {
+    "install": "node bin/install",
+    "lint": "eslint ."
+  },
+  "pre-commit": [
+    "lint",
+    "test"
+  ],
+  "devDependencies": {
+    "eslint": "*",
+    "eslint-config-tyrchen": "*",
+    "eslint-plugin-react": "*",
+    "babel-eslint": "*",
+    "babel-loader": "*",
+    "file-loader": "*",
+    "react-hot-loader": "*",
+    "webpack": "*",
+    "webpack-dev-server": "*"
+  }
+}

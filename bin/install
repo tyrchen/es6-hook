@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+
+var Validate = require('git-validate-tyrchen');
+
+Validate.copy('../webpack.config.js', 'webpack.config.js');
+
+// add dev dependencies
+Validate.installPkg('babel-loader', '*', {dev: true});
+Validate.installPkg('file-loader', '*', {dev: true});
+Validate.installPkg('react-hot-loader', '*', {dev: true});
+Validate.installPkg('webpack', '*', {dev: true});
+Validate.installPkg('webpack-dev-server', '*', {dev: true});
+
+// add dependencies
+Validate.installPkg('react', '*');
+Validate.installPkg('rx', '*');
+Validate.installPkg('ramda', '*');
+
